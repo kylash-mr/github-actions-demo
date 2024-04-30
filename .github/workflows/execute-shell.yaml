@@ -15,6 +15,6 @@ jobs:
         steps:
         - name: Code Exection
           run: | 
-          cd ..
-          sh ./hello.sh
+           cd
+           sh ./hello.sh
           
