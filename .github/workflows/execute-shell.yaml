@@ -1,0 +1,18 @@
+name: Execute shell script
+on:
+    push: 
+        branches: ["master"]
+    workflow_dispatch: 
+jobs:
+    Checkout:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Code Checkout
+              uses: actions/checkout@v4
+    Execution:
+        needs: Checkout
+        runs-on: ubuntu-latest
+        steps:
+        - name: Code Exection
+          run: sh ./hello.sh
+          
