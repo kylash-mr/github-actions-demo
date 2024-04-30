@@ -16,5 +16,6 @@ jobs:
         - name: Code Execution
           run: |
            pwd
-           sh /home/ec2-user/actions-runner/_work/github-actions-demo/github-actions-demo/hello.sh
-          
+           cd /home/ec2-user/actions-runner/_work/github-actions-demo/github-actions-demo/
+           ls
+           sh hello.sh
