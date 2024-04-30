@@ -18,5 +18,6 @@ jobs:
            pwd
            cd ..
            pwd
+           cd ..
            sh hello.sh
           
