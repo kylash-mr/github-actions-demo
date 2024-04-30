@@ -17,5 +17,6 @@ jobs:
           run: |
            pwd
            cd ..
+           cp hello.sh /home/runner/work/github-actions-demo/github-actions-demo
            sh hello.sh
           
