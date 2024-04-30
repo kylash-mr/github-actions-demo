@@ -13,8 +13,9 @@ jobs:
         needs: Checkout
         runs-on: ubuntu-latest
         steps:
-        - name: Code Exection
+        - name: Code Execution
           run: |
            pwd
-           
+           cp /home/runner/work/github-actions-demo/github-actions-demo/hello.sh ~/
+           sh ~/hello.sh
           
