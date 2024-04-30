@@ -16,5 +16,5 @@ jobs:
         - name: Code Exection
           run: | 
            cd ..
-           sh ./hello.sh
+           sh hello.sh
           
