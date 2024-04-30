@@ -14,7 +14,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Code Exection
-          run: | 
+          run: |
+           pwd
            cd ..
+           pwd
            sh hello.sh
           
