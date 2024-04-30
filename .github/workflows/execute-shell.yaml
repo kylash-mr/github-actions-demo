@@ -5,7 +5,7 @@ on:
     workflow_dispatch: 
 jobs:
     Checkout:
-        runs-on: ubuntu-latest
+        runs-on: self-hosted
         steps:
             - name: Code Checkout
               uses: actions/checkout@v4
@@ -16,7 +16,5 @@ jobs:
         - name: Code Exection
           run: |
            pwd
-           cd ..
-           cp hello.sh /home/runner/work/github-actions-demo/github-actions-demo
-           sh hello.sh
+           
           
