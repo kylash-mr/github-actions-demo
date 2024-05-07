@@ -21,3 +21,4 @@ jobs:
            ls -la
            sh hello.sh
            ls -la
+           cat result.txt
