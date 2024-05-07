@@ -5,17 +5,16 @@ on:
     workflow_dispatch: 
 jobs:
     Checkout:
-        runs-on: self-hosted
+        runs-on: [ubuntu-latest]
         steps:
             - name: Code Checkout
               uses: actions/checkout@v4
     Execution:
         needs: Checkout
-        runs-on: ubuntu-latest
+        runs-on: [ubuntu-latest]
         steps:
         - name: Code Execution
           run: |
            pwd
-           cd /home/ec2-user/actions-runner/_work/github-actions-demo/github-actions-demo/
            ls
            sh hello.sh
