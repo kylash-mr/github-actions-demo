@@ -16,5 +16,6 @@ jobs:
         - name: Code Execution
           run: |
            pwd
-           ls
+           cd
+           pwd
            sh hello.sh
